@@ -12,7 +12,7 @@ namespace Test
         {
             var ocls = "context HowToUseIt::addOne() post NumberLowerThree: self.number < 3";
 
-            OclTestProvider.AddConstraints(new[] { "HowTo" }, ocls, false, false);
+            OclTestProvider.AddConstraints(new[] { "HowTo" }, ocls, true, false);
 
             var program = new Program();
             Assert.IsTrue(program.countToTen());
