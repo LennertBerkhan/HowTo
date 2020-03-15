@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -13,7 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\ng-erp-4.0\HTW-PP-Core\OclAspectTest\OclAspectTest.csproj" />
     <ProjectReference Include="..\HowTo\HowTo.csproj" />
   </ItemGroup>
 
