@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\HTW-PP-Core\OclAspectTest\OclAspectTest.csproj" />
     <ProjectReference Include="..\HowTo\HowTo.csproj" />
   </ItemGroup>
 
