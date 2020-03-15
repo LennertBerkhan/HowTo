@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowTo", "HowTo\HowTo.csproj", "{9EED4A74-3104-4958-B070-EA9BD927D292}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{89FC3E1C-9E46-4161-AE3F-A6241F646C15}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OclAspectTest", "..\ng-erp-4.0\HTW-PP-Core\OclAspectTest\OclAspectTest.csproj", "{5423D39A-B32C-4C84-BC88-DF8CD8180B0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{9EED4A74-3104-4958-B070-EA9BD927D292}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EED4A74-3104-4958-B070-EA9BD927D292}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EED4A74-3104-4958-B070-EA9BD927D292}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89FC3E1C-9E46-4161-AE3F-A6241F646C15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89FC3E1C-9E46-4161-AE3F-A6241F646C15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89FC3E1C-9E46-4161-AE3F-A6241F646C15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89FC3E1C-9E46-4161-AE3F-A6241F646C15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5423D39A-B32C-4C84-BC88-DF8CD8180B0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5423D39A-B32C-4C84-BC88-DF8CD8180B0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5423D39A-B32C-4C84-BC88-DF8CD8180B0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5423D39A-B32C-4C84-BC88-DF8CD8180B0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
