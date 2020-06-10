@@ -22,23 +22,40 @@ namespace Test
         [Test]
         public void Objects()
         {
-            var ocls = "context HowToUseIt::addOne() post NumberLowerThree: self.number < 3";
+            //Checking if the value of an variable from an object is greater 20
+            var ocls = "context ResearchProject::amountStudents() pre responsibleProf: self.Responsible.Age > 20";
 
             OclTestProvider.AddConstraints(new[] { "HowTo" }, ocls, false, false);
 
             var program = new Program();
-            Assert.IsTrue(program.countToTen());
+            program.addStudentsToProject();
+            Assert.IsTrue(program.singleObjectTest());
         }
 
         [Test]
         public void Lists()
         {
-            var ocls = "context HowToUseIt::addOne() post NumberLowerThree: self.number < 3";
+            //Checking if there is an object in a list of objects thats age is greater than 20
+            var ocls = "context ResearchProject::amountStudents() pre OlderThan20: self.Students->exists(s | s.Age > 20)";
 
             OclTestProvider.AddConstraints(new[] { "HowTo" }, ocls, false, false);
 
             var program = new Program();
-            Assert.IsTrue(program.countToTen());
+            program.addStudentsToProject();
+            Assert.IsTrue(program.singleObjectTest());
+        }
+
+        [Test]
+        public void Lists2()
+        {
+            //Checking each student is older than 10
+            var ocls = "context ResearchProject::amountStudents() pre OlderThan10: self.Students->forAll(s | s.Age > 10)";
+
+            OclTestProvider.AddConstraints(new[] { "HowTo" }, ocls, false, false);
+
+            var program = new Program();
+            program.addStudentsToProject();
+            Assert.IsTrue(program.singleObjectTest());
         }
 
         [Test]
