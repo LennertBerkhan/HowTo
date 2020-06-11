@@ -22,8 +22,8 @@ namespace Test
         [Test]
         public void Objects()
         {
-            //Checking if the value of an variable from an object is greater 20
-            var ocls = "context ResearchProject::amountStudents() pre responsibleProf: self.Responsible.Age > 20";
+            //Checking if the value of an variable from an object is greater 40
+            var ocls = "context ResearchProject::amountStudents() pre responsibleProf: self.Responsible.Age <= 40";
 
             OclTestProvider.AddConstraints(new[] { "HowTo" }, ocls, false, false);
 
@@ -39,7 +39,7 @@ namespace Test
             var ocls = "context ResearchProject::amountStudents() pre OlderThan20: self.Students->exists(s | s.Age > 20)";
 
             OclTestProvider.AddConstraints(new[] { "HowTo" }, ocls, false, false);
-
+            
             var program = new Program();
             program.addStudentsToProject();
             Assert.IsTrue(program.singleObjectTest());
@@ -85,6 +85,8 @@ namespace Test
         public void Inv()
         {
             //Inv condition is not practical / not possible at the moment
+            //Kind of workaround would be to write an OCL for each method and check the 
+            //value of the variable even if the variable is not used.
         }
 
         [Test]

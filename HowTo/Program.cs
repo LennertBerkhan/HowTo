@@ -5,11 +5,12 @@ namespace HowTo
 {
     public class Program
     {
-        ResearchProject project = new ResearchProject("Dokumentation für die Generische Validierung komplexer Planungsalgorithmen", new Person("Prof. Dr. rer. pol. Torsten Munkelt",18));
+        ResearchProject project = new ResearchProject("Dokumentation für die Generische Validierung komplexer Planungsalgorithmen", new Person("Prof. Mustermann",42));
         
         static void Main(string[] args)
         {
             Console.WriteLine("Example how to use it");
+            
         }
 
         public bool countToTen()
